@@ -1,0 +1,11 @@
+#! /bin/bash
+#
+# muljed ja saavutused
+#
+echo -n "Mathias " # väljasta ilma reavahetuseta Mathias
+echo -n "Talo " # väljasta Talo ja tee reavahetus
+echo -n "ISP118 " # väljasta ISP118 ja tee reavahetus
+echo -n "On huvitav ja kasulik aine " # väljasta On huvitav ja kasulik aine ja tee reavahetus
+echo "Saan hästi hakkama ja on meeldiv aine " # väljasta Saan hästi hakkama ja on meeldiv aine ja tee rea vahetus
+#
+# skripti lõpp
