@@ -1,0 +1,8 @@
+#! /bin/bash
+#
+# aeg
+#
+echo $(date)
+echo $(cal)
+#
+# skripti lõpp
