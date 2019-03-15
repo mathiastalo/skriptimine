@@ -1,0 +1,10 @@
+#! /bin/bash
+#
+echo -n "a="
+read a
+echo -n "b="
+read b
+pindala=$(( $a*$b ))
+echo "Pindala on: $pindala"
+#
+#
