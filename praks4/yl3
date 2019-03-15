@@ -1,0 +1,10 @@
+#! /bin/bash
+#
+echo "Sisestage mitu istekohta on bussis: "
+read iste
+echo "Sisestage mitu reisjat on grupis: "
+read inim
+ans=$(( $iste-$inim ))
+echo "Vaba on $ans istekohta"
+#
+#
