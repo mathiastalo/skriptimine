@@ -1,0 +1,15 @@
+#! /bin/bash
+#
+echo -n "Sisesta a külje väärtus: "
+read a
+echo -n "Sisesta b külje väärtus: "
+read b
+bruudus=$(($b**2))
+aruudus=$((a**2))
+cruudus=$(($b+$a))
+hypot=$(echo "scale=2;sqrt($cruudus)" | bc)
+echo "a = $a"
+echo "b = $b"
+echo "c = $hypot"
+#
+#
