@@ -1,0 +1,18 @@
+#! /bin/bash
+#
+echo -n "Sisesta kolmnurga a külg: "
+read a
+echo -n "Sisesta kolmnurga b külg: "
+read b
+echo -n "Sisesta kolmnurga c külg: "
+read c
+abc=$(($a+$b+$c))
+p=$(($abc/2))
+p1=$(($p-$a))
+p2=$(($p-$b))
+p3=$(($p-$c))
+p4=$(($p*$p1*$p2*$p3))
+pindala=$(echo "scale=2;(1/2) * $p4"|bc)
+echo "Kolmnurga pindala on $pindala"
+#
+#
