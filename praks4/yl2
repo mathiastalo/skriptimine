@@ -1,10 +1,22 @@
 #! /bin/bash
 #
-echo -n "a="
+echo -n "Kandiku pikkus cm-tes= "
 read a
-echo -n "b="
+echo -n "Kandiku laius cm-tes= "
 read b
-pindala=$(( $a*$b ))
-echo "Pindala on: $pindala"
+kandik=$(( $a*$b ))
+echo -n "Küpsise pikkus cm-tes= "
+read c
+echo -n "Küpsise laius cm-tes= "
+read d
+kypsis=$(( $c*$d ))
+echo -n "Soovitud kihtide arv tordil= "
+read e
+echo -n "Küpsiste arv ühes pakis= "
+read f
+one=$(( $kandik/$kypsis ))
+kiht=$(( $one*$e ))
+vast=$(( $kiht/$f ))
+echo -n "Poest tuleb osta $vast pakki küpsiseid."
 #
 #
