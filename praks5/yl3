@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+echo "P 0, E 1, T 2, K 3, N 4, R 5, L 6, P 7"
+echo "Kuna plaanite ära sõita?"
+read a
+echo "Mitu ööpäeva te ära olete?"
+read b
+x=$(($b % 7))
+c=$(($a + $x))
+echo "Tagasi jõuate: $c"
+#
+#
