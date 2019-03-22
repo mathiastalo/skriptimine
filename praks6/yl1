@@ -1,9 +1,9 @@
 #!/bin/bash
 #
-read -p "Sisestage siia täisarv: "
-read arv
+read -p "Sisestage siia täisarv: " arv
 if (( $arv % 2 == 0 ))
 then
 echo "See on paarisarv"
-else echo "See on paaritu arv"
+else
+echo "See on paaritu arv"
 fi
