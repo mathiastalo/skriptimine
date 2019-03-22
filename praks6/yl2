@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+read -p "Mitu reisjat on kokku?: " a
+read -p "Mitu kohta on bussis?: " b
+x=`expr $a \/ $b`
+z=`expr $x \+ 1`
+if (( $a % $b == 0 ))
+then
+echo "Kokku on vaja $x täisbussi"
+else
+echo "Kokku on vaja $z täisbussi"
+fi
+#
+#
