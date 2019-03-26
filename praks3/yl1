@@ -2,7 +2,12 @@
 #
 # aeg
 #
-echo $(date)
-echo $(cal)
+echo -n "Today is "
+echo -n `date +%A`
+echo -n " " `date +%B`
+echo -n " " `date +%x`
+echo " " `date +%Y`
+echo "Calendar of `date +%B" "%y`"
+echo "$(cal)"
 #
 # skripti lõpp
