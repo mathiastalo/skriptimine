@@ -8,10 +8,13 @@ then
 elif [[ $aeg -ge 12 ]] && [[ $aeg -le 17 ]]
 then
 	echo "Tere päevast!"
-elif [[ $aeg -ge 18 ]] && [[ $aeg -le 24 ]]
+elif [[ $aeg -ge 18 ]] && [[ $aeg -le 21 ]]
 then
 	echo "Tere õhtust!"
 elif [[ $aeg -ge 22 ]] && [[ $aeg -le 24 ]]
+then
+	echo "Head ööd!"
+elif [[ $aeg -ge 1 ]] && [[ $aeg -le 5 ]]
 then
 	echo "Head ööd!"
 else
