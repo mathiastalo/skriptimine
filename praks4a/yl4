@@ -1,0 +1,8 @@
+#! /bin/bash
+#
+read -p "Sisestage kataloogi nimi mida tahad pakkida: " a
+read -p "Sisestage kaust kuhu tahate backup-ida: " b
+tar -czf test.tar.gz $a
+mv test.tar.gz $b
+echo "Kataloogi $a backup-i nimi on $a.tar.gz ja ta asub $b"
+#
