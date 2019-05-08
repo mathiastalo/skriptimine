@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+read -p "Sisesta suvaline arv: " arv
+if [ $arv -lt 0 ]; then
+	echo "$arv on negatiivne"
+	exit 1
+else
+	if [ $arv -eq 0 -o $arv -eq 1 ]; then
+	echo "$arv ei ole algarv"
+	exit 0
+else
+	jagaja=2
+	while [ $(($arv % $jagaja)) -ne 0 ]
+	do
+	jagaja=$(($jahaja + 1))
+	done
+if [ $arv -eq $jagaja ]; then
+	echo "$arv on algarv"
+else
+	echo "$arv ei ole algarv"
+	fi
+exit 0
+fi
+fi
