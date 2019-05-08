@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+read -p "Sisesta kuu number: " kuu
+if test $kuu == 1
+then
+	echo "See on jaanuar"
+elif test $kuu == 2
+then
+	echo "See on veebruar"
+elif test $kuu == 3
+then
+	echo "See on märts"
+elif test $kuu == 4
+then
+	echo "See on aprill"
+elif test $kuu == 5
+then
+	echo "See on mai"
+elif test $kuu == 6
+then
+	echo "See on juuni"
+elif test $kuu == 7
+then
+	echo "See on juuli"
+elif test $kuu == 8
+then
+	echo "See on august"
+elif test $kuu == 9
+then
+	echo "See on september"
+elif test $kuu == 10
+then
+	echo "See on oktoober"
+elif test $kuu == 11
+then
+	echo "See on november"
+elif test $kuu == 12
+then
+	echo "See on detsember"
+else
+	echo "Vigane sisend"
+fi
