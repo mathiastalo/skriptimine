@@ -1,8 +1,8 @@
 #! /bin/bash
 #
-read -p "Sisestage kataloogi nimi mida tahad pakkida: " a
-read -p "Sisestage kaust kuhu tahate backup-ida: " b
-tar -czf test.tar.gz $a
-mv test.tar.gz $b
-echo "Kataloogi $a backup-i nimi on $a.tar.gz ja ta asub $b"
+read -p "Sisestage kataloogi nimi mida tahad pakkida: " katalooginimi
+baasnimi="$(basename $katalooginimi)"
+asukoht="/home/user/skriptimine/praks4a/backup/$baasnimi.backup.tar.gz"
+tar -zcvf $asukoht $katalooginimi
+echo "Kataloogi $katalooginimi backup'i nimi on $baasnimi.backup.tar.gz ja ta asub $asukoht"
 #
