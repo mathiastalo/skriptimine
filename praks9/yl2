@@ -1,0 +1,15 @@
+#! /bin/bash
+#
+read -p "Sisesta ridade arv: " a
+read -p "Sisesta tärnide arv read: " b
+for (( i = 1; i <= a; i++ ))
+do
+echo "$i"
+for (( j = 1; j <= b; j++ ))
+do
+echo "*"
+done
+echo ""
+done
+done
+#
