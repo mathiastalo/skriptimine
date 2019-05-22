@@ -1,0 +1,21 @@
+#! /bin/bash
+#
+kell=$(date +%H)
+
+if [[ $kell -ge 6 ]] && [[ $kell -le 11 ]]
+then
+	echo "Tere hommikust, $USER!"
+elif [[ $kell -ge 12 ]] && [[ $kell -le 17 ]]
+then
+	echo "Tere päeavast, $USER!"
+elif [[ $kell -ge 18 ]] && [[ $kell -le 21 ]]
+then
+	echo "Tere õhtust, $USER!"
+elif [[ $kell -ge 22 ]] && [[ $kell -le 24 ]]
+then
+	echo "Head ööd, $USER!"
+else
+	echo "Vigane sisend"
+fi
+#
+
