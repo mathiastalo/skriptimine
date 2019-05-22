@@ -1,7 +1,7 @@
 #! /bin/bash
 #
-read -p "Sisesta oma vanus: " vanus
-
+read -p "Sisesta oma vanus: " vanus   #Laseb sisestada vanuse
+#Hakkab testima vanust if commandiga
 if test $vanus -gt 0 -a $vanus -lt 11
 	then
 		echo "Oled laps"
