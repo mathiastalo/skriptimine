@@ -1,10 +1,10 @@
 #! /bin/bash
 #
-kell=$(date +%H)
+kell=$(date +%H) #Võtab automaatselt kellaaja tundides
 
-if [[ $kell -ge 6 ]] && [[ $kell -le 11 ]]
+if [[ $kell -ge 6 ]] && [[ $kell -le 11 ]] #if commandiga vaatab mis ajaga on tegemist
 then
-	echo "Tere hommikust, $USER!"
+	echo "Tere hommikust, $USER!" #tervitab kasutajat
 elif [[ $kell -ge 12 ]] && [[ $kell -le 17 ]]
 then
 	echo "Tere päeavast, $USER!"
