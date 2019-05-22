@@ -1,7 +1,7 @@
 #! /bin/bash
 #
-read -p "Sisesta kuu number: " kuu
-if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12
+read -p "Sisesta kuu number: " kuu #Küsib kuu numbrit
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12 #Hakkab testima kuu numbrit et oelda mis kuu on numbri jargi
 then
 	echo "Praegu on talv"
 elif test $kuu -ge 3 -a $kuu -lt 5
