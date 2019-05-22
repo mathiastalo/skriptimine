@@ -1,8 +1,8 @@
 #! /bin/bash
 #
-read -p "Sisesta aja väärtus: " aeg
+read -p "Sisesta aja väärtus: " aeg #Laseb sisestada aja väärtuse
 
-if [[ $aeg -ge 6 ]] && [[ $aeg -le 11 ]]
+if [[ $aeg -ge 6 ]] && [[ $aeg -le 11 ]] #if commandiga vaatab mis aeg sobib väärtusega
 then
 	echo "Tere hommikust!"
 elif [[ $aeg -ge 12 ]] && [[ $aeg -le 17 ]]
